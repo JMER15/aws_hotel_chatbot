@@ -42,3 +42,9 @@ https://www.youtube.com/watch?v=RB8yw2nzA2Q
 ![closing_answer](img/closing_answer.png)
 
 #### 3. Tipos de Slots
+
+- Configuramos aquellos slots que tienen diferentes tipos, como es el caso del tipo de habitación
+![slot_type_example](img/slot_type_example.png)
+
+- En este caos volvemos a la página inicial de slots, e incluimos el tipo generado anteriormente
+![slot_type_example_into_slot](img/slot_type_example_into_slot.png)
