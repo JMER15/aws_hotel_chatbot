@@ -41,10 +41,35 @@ https://www.youtube.com/watch?v=RB8yw2nzA2Q
 - Configuramos el mensaje de cierre
 ![closing_answer](img/closing_answer.png)
 
-#### 3. Tipos de Slots
+#### 3. Tipos de Slots hay que revisarlo posiblemente haya que borrar.
 
 - Configuramos aquellos slots que tienen diferentes tipos, como es el caso del tipo de habitación
 ![slot_type_example](img/slot_type_example.png)
 
 - En este caos volvemos a la página inicial de slots, e incluimos el tipo generado anteriormente
 ![slot_type_example_into_slot](img/slot_type_example_into_slot.png)
+
+#### TODO
+- Añadir fórmularios nº de personas por habitación, añadir calendarios para fecha_entrada y salida y añadir cierre de confirmación de reserva y añadir lambda para confirmar la reserva.
+
+**Implementación del formulario.** falta revisar fechas
+
+![form_room 1](img/formulario_habitacion_1.png)
+
+Deberemos de elegir la ranura tipo de habitación y añadir el tipo de habitación que queremos que se muestre en el formulario.
+
+Elegimos opciones avanzadas.
+
+![form_room 2](img/formulario_habitacion_2.png)
+
+![form_room 3](img/formulario_habitacion_3.png)
+
+![form_room 4](img/formulario_habitacion_4.png)
+
+![form_room 5](img/formulario_habitacion_5.png)
+
+**crear intent pagar habitación**
+**revisar confirmación y cumplimiento**
+**lambda para la confirmación de la reserva**
+**especificar formato fecha YYYY-MM-DD**
+**buscar inglés**
