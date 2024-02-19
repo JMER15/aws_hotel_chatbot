@@ -5,8 +5,11 @@
 ### **Virginia Ordoño Bernier**
 ### **José Miguel Escribano Ruiz**
 
-## Módulo
-### **Modelos de Inteligencia Artificial**
+### **Módulo: Modelos de Inteligencia Artificial**
+
+<p align = "center">
+    <img src="img/portada.png" width="600">
+</p>
 
 ## Contenidos
 
@@ -110,8 +113,6 @@ El proyecto se desarrollará en varias fases, que se detallan a continuación:
   
 ![slot_type_example_into_slot](img/slot_type_example_into_slot.png)
 
-## TODO
-
 #### 4. Creación de los formularios.
 
 - Añadir fórmularios nº de personas por habitación, añadir calendarios para fecha_entrada y salida y añadir cierre de confirmación de reserva y añadir lambda para confirmar la reserva.
@@ -184,8 +185,23 @@ En este apartado se realizarán pruebas para comprobar que el chatbot funciona c
 
 #### 1. Prueba de saludo
 
+Se prueban varios salidos y vemos que el chatbot responde correctamente.
 
-## Lista de tareas a Revisar
+![prueba_saludo](img/prueba1.png)
+
+![prueba_saludo2](img/prueba2.png)
+
+#### 2. Prueba de reserva de habitación
+
+Se prueban diferentes escenarios de reserva de habitación y se comprueba que el chatbot responde correctamente. Se harán diferentes preguntas cómo: nº de habitaciones, nº de personas, fecha de entrada y salida, tipo de habitación, etc.
+
+![prueba_reserva](img/prueba3.png)
+
+![prueba_reserva2](img/prueba4.png)
+
+![prueba_reserva3](img/prueba5.png)
+
+![prueba_reserva4](img/prueba6.png)
 
 - **crear intent pagar habitación**
 
