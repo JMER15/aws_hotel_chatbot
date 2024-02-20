@@ -1,51 +1,63 @@
-# Proyecto AWS HOTEL CHATBOT
-
-## Autores
-
-### **Virginia Ordoño Bernier**
-### **José Miguel Escribano Ruiz**
-
-### **Módulo: Modelos de Inteligencia Artificial**
+# AWS HOTEL CHATBOT - Reservas de Hotel 
 
 <p align = "center">
-    <img src="img/portada.png" width="600">
+    <img src="img/portada.png" width="300">
 </p>
 
-## Contenidos
+## Índice
 
-[Video Referencia](https://www.youtube.com/watch?v=RB8yw2nzA2Q), en el que nos hemos basado para la realización de este proyecto.
+### Descripción
 
-## Objetivos
+Este proyecto crea un chatbot que permite a los usuarios realizar reservas de habitaciones de hotel. El chatbot está desarrollado utilizando AWS Lex y se integra con otros servicios de AWS como Lambda. El proyecto forma parte del módulo **"Modelos de Inteligencia Artificial"** del Curso de **Especialización en Inteligencia Artificial y Big Data**.
 
-El objetivo de este RA es que el alumnado adquiera parte de las competencias básicas del módulos "Modelos de Inteligencia Artificial" del Curso de Especialización en Inteligencia Artificial y Big Data.
+### Objetivo
 
-Consistirá en desarrollar un chatbot desplegado y funcional que pueda gestionar reservas de hoteles y servicios adicionales de manera efectiva. Además, se espera un informe detallado que documente el proceso de desarrollo, las decisiones de diseño, las pruebas realizadas y las lecciones aprendidas.
+El chatbot puede ser utilizado por los hoteles para ofrecer un servicio de atención al cliente más eficiente y mejorar la experiencia de los usuarios. Los usuarios pueden utilizar el chatbot para realizar reservas de habitaciones, obtener información sobre los servicios del hotel y hacer preguntas frecuentes.
 
-Este proyecto no solo proporcionará a los estudiantes habilidades técnicas en el uso de AWS Lex, sino que también les permitirá explorar aspectos éticos y legales en el desarrollo de soluciones de inteligencia artificial.
+### Fuentes
 
-## Introducción
+- [How to Make a Chatbot Using Amazon Lex and AWS Lambda (Python)](https://www.youtube.com/watch?v=RB8yw2nzA2Q) -> en el que nos hemos basado para la realización de este proyecto.
+- [Interact with an Amazon Lex V2 bot with the AWS CLI, AWS SDK for Python (Boto3), and AWS SDK for DotNet](https://aws.amazon.com/es/blogs/machine-learning/interact-with-an-amazon-lex2v2-bot-with-the-aws-cli-aws-sdk-for-python-and-aws-sdk-dotnet/)
+- [Curso de AWS Desde Cero | Amazon Web Services](https://www.youtube.com/watch?v=zQyrhjEAqLs)
+- [AWS LEX - Build & Deploy Chatbots (A Crash Course](https://www.youtube.com/watch?v=82WduX8A99g)
+- [Building a Menu-Based Chatbot using Amazon Lex](https://www.youtube.com/watch?v=NVs1Y2MrZSA)
+- [Learn About New Amazon Lex Features to Accelarate Customer Time to Value- AWS Online Tech Talks](https://www.youtube.com/watch?v=t5prCwYTdT0)
+- [Usar el generador visual de conversaciones](https://docs.aws.amazon.com/es_es/lexv2/latest/dg/visual-conversation-builder.html)
+- [Amazon Lex: Validate Slot data with Lambda](https://www.youtube.com/watch?v=1xRl8Ipa018)
 
-El proyecto consiste en la creación de un chatbot que permita a los usuarios realizar reservas de habitaciones de hotel, con datos tales como la fecha de entrada y salida, el número de habitaciones, el tipo de habitación, etc. Además, el chatbot deberá ser capaz de responder a preguntas frecuentes y proporcionar información sobre los servicios del hotel.
+### Planificación
 
-## Objetivos del proyecto
+El proyecto se desarrollará en las siguientes fases:
 
-- Crear un chatbot funcional que permita a los usuarios realizar reservas de habitaciones de hotel.
-- Desplegar el chatbot en AWS Lex.
-- Documentar el proceso de desarrollo, las decisiones de diseño, las pruebas realizadas y las lecciones aprendidas.
-- Explorar aspectos éticos y legales en el desarrollo de soluciones de inteligencia artificial.
-- Adquirir competencias básicas del módulo "Modelos de Inteligencia Artificial" del Curso de Especialización en Inteligencia Artificial y Big Data.
+**Fase 1:** Diseño del chatbot
 
-## ¿Por qué es importante este proyecto?
+**Fase 2:** Desarrollo del chatbot
 
-Los chatbots son una herramienta cada vez más común en el mundo de los negocios. Permiten a las empresas automatizar tareas repetitivas, mejorar la atención al cliente y ofrecer servicios personalizados. Además, los chatbots pueden ser una forma eficaz de recopilar datos sobre los clientes y sus preferencias.
+**Fase 3:** Pruebas del chatbot
 
-## Metodología
+**Fase 4:** Despliegue del chatbot
 
-El proyecto se desarrollará siguiendo la metodología de desarrollo de software ágil. Se utilizará un enfoque iterativo e incremental, con el fin de obtener retroalimentación temprana y mejorar continuamente el chatbot.
+### Tecnologías utilizadas:
 
-## Planificación
+- **AWS Lex**
+- **AWS Lambda**
+- **Node.js**
 
-El proyecto se desarrollará en varias fases, que se detallan a continuación:
+### Requisitos previos:
+
+- Tener una cuenta de AWS
+- Tener conocimientos básicos de AWS Lex
+- Tener conocimientos básicos de JavaScript.
+
+### Licencia:
+
+Este proyecto está licenciado bajo la licencia MIT.
+
+### Autores:
+
+- [José Miguel Escribano Ruiz](https://github.com/JMER15)
+
+- [Virginia Ordoño Bernier](https://github.com/viorbe20)
 
 ## Desarrollo del proyecto
 
@@ -203,7 +215,47 @@ Se prueban diferentes escenarios de reserva de habitación y se comprueba que el
 
 ![prueba_reserva4](img/prueba6.png)
 
-- **crear intent pagar habitación**
+### Implementación del chatbot en una página web
+
+#### 1. Creación de la página web
+
+- Creamos una página web sencilla con HTML y CSS.
+- Añadimos el código de AWS Lex para integrar el chatbot en la página web.
+- Subimos la página web a un servidor.
+- Probamos la página web y comprobamos que el chatbot funciona correctamente.
+- Documentamos el proceso de integración del chatbot en la página web.
+
+Para ello usaremos esta página que nos permite alojar páginas web gratuitamente.
+
+- [kommunicate](https://www.kommunicate.io/)
+
+Nos registramos con nuestro correo y elegimos el rol de estudiante.
+
+Seleccionamos la opción de integración de chatbot.
+
+![kommunicate1](img/bot_integration1.png)
+
+Elegimos la opción Bot Integrations para integrar nuestro bot. Tenemos varias formas de integrarlo como por ejemplo AWS que será nuestra opción, también tenemos DialogFlow ES, OpenAi entre otras.
+
+![kommunicate2](img/bot_integration2.png)
+
+Seleccionamos AWS
+
+![kommunicate3](img/bot_integration3.png)
+
+Seleccionamos AWS Lex v2
+
+![kommunicate4](img/bot_integration4.png)
+
+Necesitaremos una access key y una secret key que nos proporcionara AWS.
+
+![kommunicate5](img/bot_integration5.png)
+
+Para ello deberemos de ir a IAM y ver el rol asignado y de ahí sacamos la access key y la secret key.
+
+![kommunicate6](img/bot_integration6.png)
+
+En nuestro caso este es el rol que se le asigno al crear nuestro rol, porque se le asigno el rol de LabRole.
 
 - **revisar confirmación y cumplimiento con la función lambda** ✅
 
@@ -211,4 +263,6 @@ Se prueban diferentes escenarios de reserva de habitación y se comprueba que el
 
 - **especificar formato fecha YYYY-MM-DD tanto en salida como en entrada** ✅ puesto en el formulario que tiene que introducir fecha formato dd/mm/yyyy
 
-- **buscar inglés**
+- **¿Implementar ingles?**
+- 
+- **Sugerencia actividades**
