@@ -25,9 +25,13 @@
 
 Este proyecto crea un chatbot que permite a los usuarios realizar reservas de habitaciones de hotel. El chatbot está desarrollado utilizando AWS Lex y se integra con otros servicios de AWS como Lambda. El proyecto forma parte del módulo **"Modelos de Inteligencia Artificial"** del Curso de **Especialización en Inteligencia Artificial y Big Data**.
 
+[subir](#Índice)
+
 ### Objetivo
 
 El chatbot puede ser utilizado por los hoteles para ofrecer un servicio de atención al cliente más eficiente y mejorar la experiencia de los usuarios. Los usuarios pueden utilizar el chatbot para realizar reservas de habitaciones, obtener información sobre los servicios del hotel y hacer preguntas frecuentes.
+
+[subir](#Índice)
 
 ### Fuentes
 
@@ -39,24 +43,31 @@ El chatbot puede ser utilizado por los hoteles para ofrecer un servicio de atenc
 - [Learn About New Amazon Lex Features to Accelarate Customer Time to Value- AWS Online Tech Talks](https://www.youtube.com/watch?v=t5prCwYTdT0)
 - [Usar el generador visual de conversaciones](https://docs.aws.amazon.com/es_es/lexv2/latest/dg/visual-conversation-builder.html)
 - [Amazon Lex: Validate Slot data with Lambda](https://www.youtube.com/watch?v=1xRl8Ipa018)
+- [Video Integración web](https://www.youtube.com/watch?v=aPfrh48sU_U&list=PLAMHV77MSKJ7s4jE7F_k_Od8qZlFGf1BY&index=5&ab_channel=PradipNichite)
+
+[subir](#Índice)
 
 ### Planificación
 
 El proyecto se desarrollará en las siguientes fases:
 
-**Fase 1:** Diseño del chatbot
+**Fase 1:** Diseño del chatbot.
 
-**Fase 2:** Desarrollo del chatbot
+**Fase 2:** Desarrollo del chatbot.
 
-**Fase 3:** Pruebas del chatbot
+**Fase 3:** Pruebas del chatbot.
 
-**Fase 4:** Despliegue del chatbot
+**Fase 4:** Despliegue del chatbot.
+
+[subir](#Índice)
 
 ### Tecnologías utilizadas:
 
 - **AWS Lex**
 - **AWS Lambda**
 - **Node.js**
+
+[subir](#Índice)
 
 ### Requisitos previos:
 
@@ -66,21 +77,11 @@ El proyecto se desarrollará en las siguientes fases:
 
 [subir](#Índice)
 
-### Licencia:
+### Desarrollo del proyecto
 
-Este proyecto está licenciado bajo la licencia MIT.
+#### Configuración en AWS
 
-### Autores:
-
-- [José Miguel Escribano Ruiz](https://github.com/JMER15)
-
-- [Virginia Ordoño Bernier](https://github.com/viorbe20)
-
-## Desarrollo del proyecto
-
-### Configuración en AWS
-
-#### 1. Creación del chatbot
+##### 1. Creación del chatbot
 
 - Creamos un nuevo chatbot en blanco y añadimos el nombre.
   
@@ -98,7 +99,7 @@ Este proyecto está licenciado bajo la licencia MIT.
   
 ![chatbot_language_settings](img/chatbot_language_settings.png)
 
-#### 2. Creación de los Intents
+##### 2. Creación de los Intents
 
 - Creamos los _intents_ que consideremos. En nuestra caso hemos creado ReservarHabitacion, Saludar.
   
@@ -118,7 +119,7 @@ Este proyecto está licenciado bajo la licencia MIT.
 
 ![slot_example2](img/slots_example2.png)
 
-- Hemos creado 7 ranuras: tipo de habitación, fecha de entrada, fecha de salida, número de habitaciones, número de personas, ciudad y nombre de la reserva.
+- Hemos creado 7 ranuras: tipo de habitación, fecha de entrada, número de habitaciones, número de personas, ciudad, nombre de la reserva y servicios.
 
 - Incluiremos esos slots en algunos de nuestros enunciados.
    
@@ -132,7 +133,7 @@ Este proyecto está licenciado bajo la licencia MIT.
   
 ![closing_answer](img/closing_answer.png)
 
-#### 3. Tipos de Slots hay que revisarlo posiblemente haya que borrar.
+##### 3. Tipos de Slots.
 
 - Configuramos aquellos slots que tienen diferentes tipos, como es el caso del tipo de habitación.
   
@@ -142,9 +143,9 @@ Este proyecto está licenciado bajo la licencia MIT.
   
 ![slot_type_example_into_slot](img/slot_type_example_into_slot.png)
 
-#### 4. Creación de los formularios.
+##### 4. Creación de los formularios.
 
-- Añadir fórmularios nº de personas por habitación, añadir calendarios para fecha_entrada y salida y añadir cierre de confirmación de reserva y añadir lambda para confirmar la reserva.
+- Añadir fórmularios nº de personas por habitación, añadir cierre de confirmación de reserva y añadir lambda para confirmar la reserva.
 
 ![form_room 1](img/formulario_habitacion_1.png)
 
@@ -166,17 +167,17 @@ Elegimos opciones avanzadas y dentro de ahí elegimos más opciones de mensaje.
 
 ![form_room 5](img/formulario_habitacion_5.png)
 
-#### 5. Creación de la Lambda para la confirmación de la reserva.
+##### 5. Creación de la Lambda para la confirmación de la reserva.
 
-- Creamos una nueva función Lambda, esta lambda se creará para que haga una recopilación de las opciones que ha ido eligiendo el usuario para que la tenga al final de la reserva, con lo que ha ido seleccionando.
+- Creamos una nueva función Lambda, que guardara las opciones que ha ido eligiendo el usuario para que se puedan mostrar al final de la reserva.
 
 ![lambda_create](img/lambda1.png)
 
-- Elegimos rol existente. En nuestro caso el rol es **"LabRole"**.
+- Elegimos rol existente. En nuestro caso el rol es **_"LabRole"_**.
 
 ![lambda_create2](img/lambda2.png)
 
-- Elegiremos node para crear la lambda.
+- Elegiremos **_Node.js_** para crear la lambda.
 
 - Añadimos el código de la lambda.
 
@@ -186,7 +187,7 @@ Elegimos opciones avanzadas y dentro de ahí elegimos más opciones de mensaje.
 
 ![lambda_create4](img/lambda4.png)
 
-- Elegimos **"TestBotAlias"**.
+- Elegimos **_"TestBotAlias"_**.
 
 ![lambda_create5](img/lambda5.png)
 
@@ -204,25 +205,25 @@ Elegimos opciones avanzadas y dentro de ahí elegimos más opciones de mensaje.
 
 Y ya estará creada y asignada la lambda, para recopilar los datos de la reserva, ahora sólo faltaría probarlo.
 
-# TODO 2
-
-### Realiazación de pruebas
+#### Realización de pruebas.
 
 En este apartado se realizarán pruebas para comprobar que el chatbot funciona correctamente. Se probarán diferentes escenarios y se documentarán los resultados.
 
-### Pruebas de funcionalidad
+[subir](#Índice)
 
-#### 1. Prueba de saludo
+#### Pruebas de funcionalidad
 
-Se prueban varios salidos y vemos que el chatbot responde correctamente.
+##### 1. Prueba de saludo
+
+Se prueban varios salidas y vemos que el chatbot responde correctamente.
 
 ![prueba_saludo](img/prueba1.png)
 
 ![prueba_saludo2](img/prueba2.png)
 
-#### 2. Prueba de reserva de habitación
+##### 2. Prueba de reserva de habitación.
 
-Se prueban diferentes escenarios de reserva de habitación y se comprueba que el chatbot responde correctamente. Se harán diferentes preguntas cómo: nº de habitaciones, nº de personas, fecha de entrada y salida, tipo de habitación, etc.
+Se prueban diferentes escenarios de reserva de habitación y se comprueba que el chatbot responde correctamente. Se harán diferentes preguntas como: nº de habitaciones, nº de personas, fecha de entrada, tipo de habitación, servicios,etc.
 
 ![prueba_reserva](img/prueba3.png)
 
@@ -230,11 +231,15 @@ Se prueban diferentes escenarios de reserva de habitación y se comprueba que el
 
 ![prueba_reserva3](img/prueba5.png)
 
+![prueba_reserva5](img/prueba7.png)
+
 ![prueba_reserva4](img/prueba6.png)
 
-### Implementación del chatbot en una página web
+[subir](#Índice)
 
-#### 1. Creación de la página web
+#### Implementación del chatbot en una página web
+
+##### 1. Creación de la página web
 
 - Creamos una página web sencilla con HTML y CSS.
 - Añadimos el código de AWS Lex para integrar el chatbot en la página web.
@@ -272,14 +277,18 @@ Para ello deberemos de ir a IAM y ver el rol asignado y de ahí sacamos la acces
 
 ![kommunicate6](img/bot_integration6.png)
 
-En nuestro caso este es el rol que se le asigno al crear nuestro rol, porque se le asigno el rol de LabRole.
+En nuestro caso como tenemos una cuenta de aws educate no podemos sacar la access key y la secret key, por lo que no podremos integrar el chatbot en la página web. Sin embargo facilitamos aquí la información por si pudiera ser del interés de alguien.
 
-- **revisar confirmación y cumplimiento con la función lambda** ✅
+- [Video Integración web](https://www.youtube.com/watch?v=aPfrh48sU_U&list=PLAMHV77MSKJ7s4jE7F_k_Od8qZlFGf1BY&index=5&ab_channel=PradipNichite)
 
-- **lambda para la confirmación de la reserva** ✅
+### Licencia:
 
-- **especificar formato fecha YYYY-MM-DD tanto en salida como en entrada** ✅ puesto en el formulario que tiene que introducir fecha formato dd/mm/yyyy
+Este proyecto está licenciado bajo la licencia MIT.
 
-- **¿Implementar ingles?**
-- 
-- **Sugerencia actividades**
+[subir](#Índice)
+
+### Autores:
+
+- [José Miguel Escribano Ruiz](https://github.com/JMER15)
+
+- [Virginia Ordoño Bernier](https://github.com/viorbe20)
