@@ -6,6 +6,21 @@
 
 ## Índice
 
+- **[Descripcion](#Descripción)**
+- **[Objetivo](#Objetivo)**
+- **[Fuentes](#Fuentes)**
+- **[Planificación](#Planificación)**
+- **[Tecnologías utilizadas](#Tecnologías-utilizadas)**
+- **[Requisitos previos](#Requisitos-previos)**
+- **[Licencia](#Licencia)**
+- **[Autores](#Autores)**
+- **[Desarrollo del proyecto](#Desarrollo-del-proyecto)**
+  - **[Configuración en AWS](#Configuración-en-AWS)**
+  - **[Realiazación de pruebas](#Realiazación-de-pruebas)**
+  - **[Implementación del chatbot en una página web](#Implementación-del-chatbot-en-una-página-web)**
+  - **[Pruebas de funcionalidad](#Pruebas-de-funcionalidad)**
+    - **[Prueba de saludo](#Prueba-de-saludo)**
+
 ### Descripción
 
 Este proyecto crea un chatbot que permite a los usuarios realizar reservas de habitaciones de hotel. El chatbot está desarrollado utilizando AWS Lex y se integra con otros servicios de AWS como Lambda. El proyecto forma parte del módulo **"Modelos de Inteligencia Artificial"** del Curso de **Especialización en Inteligencia Artificial y Big Data**.
@@ -48,6 +63,8 @@ El proyecto se desarrollará en las siguientes fases:
 - Tener una cuenta de AWS
 - Tener conocimientos básicos de AWS Lex
 - Tener conocimientos básicos de JavaScript.
+
+[subir](#indice)
 
 ### Licencia:
 
