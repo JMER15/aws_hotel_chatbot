@@ -12,14 +12,19 @@
 - **[Planificación](#Planificación)**
 - **[Tecnologías utilizadas](#Tecnologías-utilizadas)**
 - **[Requisitos previos](#Requisitos-previos)**
-- **[Licencia](#Licencia)**
-- **[Autores](#Autores)**
 - **[Desarrollo del proyecto](#Desarrollo-del-proyecto)**
   - **[Configuración en AWS](#Configuración-en-AWS)**
-  - **[Realiazación de pruebas](#Realiazación-de-pruebas)**
+    - **[1. Creación del chatbot](#1-Creación-del-chatbot)**
+    - **[2. Creación de los Intents](#2-Creación-de-los-Intents)**
+    - **[3. Tipos de Slots](#3-Tipos-de-Slots)**
+    - **[4. Creación de los formularios](#4-Creación-de-los-formularios)**
+    - **[5. Creación de la Lambda para la confirmación de la reserva](#5-Creación-de-la-Lambda-para-la-confirmación-de-la-reserva)**
+  - **[Realización de pruebas](#Realización-de-pruebas)**
+    - **[1. Prueba de Saludo](#1-Prueba-de-saludo)**
+    - **[2. Prueba de reserva de habitación](#2-Prueba-de-reserva-de-habitación)**
   - **[Implementación del chatbot en una página web](#Implementación-del-chatbot-en-una-página-web)**
-  - **[Pruebas de funcionalidad](#Pruebas-de-funcionalidad)**
-    - **[Prueba de saludo](#Prueba-de-saludo)**
+- **[Licencia](#Licencia)**
+- **[Autores](#Autores)**
 
 ### Descripción
 
