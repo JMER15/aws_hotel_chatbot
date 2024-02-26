@@ -64,7 +64,7 @@ El proyecto se desarrollará en las siguientes fases:
 - Tener conocimientos básicos de AWS Lex
 - Tener conocimientos básicos de JavaScript.
 
-[subir](#indice)
+[subir](#Índice)
 
 ### Licencia:
 
